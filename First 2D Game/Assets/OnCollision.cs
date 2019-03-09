@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class OnCollision : MonoBehaviour
 {
@@ -32,6 +33,7 @@ public class OnCollision : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W) && isInCollider == true)
         {
             Debug.Log("ok");
+            SceneManager.LoadScene("test");
         }
     }
 }

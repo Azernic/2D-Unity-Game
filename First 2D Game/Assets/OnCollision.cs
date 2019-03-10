@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class OnCollision : MonoBehaviour
 {
+    public Collider FPSController; // idk what this does right now i dont think it's being used
+
+    private GameObject player; // neither is this
 
     private bool isInCollider;
 
@@ -32,8 +35,9 @@ public class OnCollision : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.W) && isInCollider == true)
         {
+            SceneManager.LoadScene(1);
             Debug.Log("ok");
-            SceneManager.LoadScene("test");
+            
         }
     }
 }

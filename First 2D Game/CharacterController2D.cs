@@ -1,3 +1,6 @@
+// credits to brackeys
+// currently not being used as I have a custom made one
+
 using UnityEngine;
 
 public class CharacterController2D : MonoBehaviour
